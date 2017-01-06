@@ -16,29 +16,37 @@ p {
   font-size: 21pt;
 }
 
-header{ height: 100px;
-  width: 100%;
-  border-bottom: 2pt solid $green;
-  overflow: hidden;
+.header{
+  position: relative;
+  height: 100px;
+    margin-bottom: 7%;
 }
 
 .logo {
-  height: 90px;
+  clear: both;
+  height: 220px;
+  padding-left: 0px;
+  padding-top: 0px;
   padding: 10px;
   box-sizing: border-box;
+  position: absolute;
 }
 
 
 .line-menu {
+  float: right;
   height: 50px;
   width: auto;
-  margin-top: 40%;
-  margin-right: 10%;
+  margin-top: 6%;
+  margin-right: 2%;
     box-sizing: border-box;
 }
 
 nav {
-  height: 100px;
+  clear: both;
+  height: 130px;
+  width: 70%;
+  border-bottom: 3pt solid $green;
   float: right;
   box-sizing: border-box;
 }
@@ -56,6 +64,8 @@ nav {
 .imagefeed {
   height: 290px;
   width: 25%;
+  border: 2px solid white;
+  box-sizing: border-box;
 }
 
 .imagefeed img {
@@ -66,12 +76,13 @@ nav {
 }
 
 .imagefeed img:hover {
-  opacity: .5;
-  
+  opacity: .35;
 }
 
-.titlerow {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
+
+
+// .titlerow {
+//   width: 100%;
+//   height: auto;
+//   margin: 0 auto;
+// }

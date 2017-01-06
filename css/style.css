@@ -11,26 +11,33 @@ h2 {
 p {
   font-size: 21pt; }
 
-header {
+.header {
+  position: relative;
   height: 100px;
-  width: 100%;
-  border-bottom: 2pt solid #c9da2b;
-  overflow: hidden; }
+  margin-bottom: 7%; }
 
 .logo {
-  height: 90px;
+  clear: both;
+  height: 220px;
+  padding-left: 0px;
+  padding-top: 0px;
   padding: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: absolute; }
 
 .line-menu {
+  float: right;
   height: 50px;
   width: auto;
-  margin-top: 40%;
-  margin-right: 10%;
+  margin-top: 6%;
+  margin-right: 2%;
   box-sizing: border-box; }
 
 nav {
-  height: 100px;
+  clear: both;
+  height: 130px;
+  width: 70%;
+  border-bottom: 3pt solid #c9da2b;
   float: right;
   box-sizing: border-box; }
 
@@ -45,7 +52,9 @@ nav {
 
 .imagefeed {
   height: 290px;
-  width: 25%; }
+  width: 25%;
+  border: 2px solid white;
+  box-sizing: border-box; }
 
 .imagefeed img {
   width: 100%;
@@ -54,11 +63,6 @@ nav {
   opacity: none; }
 
 .imagefeed img:hover {
-  opacity: .5; }
-
-.titlerow {
-  width: 100%;
-  height: auto;
-  margin: 0 auto; }
+  opacity: .35; }
 
 /*# sourceMappingURL=style.css.map */
