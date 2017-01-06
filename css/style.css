@@ -64,4 +64,11 @@ nav {
 .imagefeed img:hover {
   opacity: .35; }
 
+#worldmap .feedContainer {
+  margin-right: 0;
+  margin-left: 40%; }
+
+#worldmap .imagefeed {
+  width: 33.3%; }
+
 /*# sourceMappingURL=style.css.map */
