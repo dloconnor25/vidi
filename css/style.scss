@@ -19,11 +19,11 @@ p {
 .header{
   position: relative;
   height: 100px;
-    margin-bottom: 7%;
+  margin-bottom: 7%;
 }
 
 .logo {
-  clear: both;
+  // clear: both;
   height: 220px;
   padding-left: 0px;
   padding-top: 0px;
@@ -39,11 +39,11 @@ p {
   width: auto;
   margin-top: 6%;
   margin-right: 2%;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 nav {
-  clear: both;
+  // clear: both;
   height: 130px;
   width: 70%;
   border-bottom: 3pt solid $green;
@@ -52,7 +52,7 @@ nav {
 }
 
 .feedContainer {
-  clear: both;
+  // clear: both;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 2%;
@@ -81,20 +81,37 @@ nav {
 
 
 
+#worldmap .trending-map-feed{
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+  padding-top: 20px;
+  font-family: $body;
+}
 
 #worldmap .feedContainer {
   margin-right: 0;
   margin-left: 40%;
+  height: 870px;
+  overflow-y: scroll;
 }
 
 #worldmap .imagefeed {
     width: 33.3%;
 }
 
+#worldmap .map-container{
+  // clear: both;
+  float: left;
+  width: 40%;
+  height: 870px;
+  // background-color: $green;
+  overflow-y: scroll;
+  // This is where the map styling comes in.
+}
 
-
-// .titlerow {
-//   width: 100%;
-//   height: auto;
-//   margin: 0 auto;
-// }
+#chartdiv{
+  width: 100%;
+  height: 870px;
+  overflow-y: scroll;
+}
