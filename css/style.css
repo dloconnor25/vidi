@@ -1,15 +1,29 @@
 h1 {
   font-size: 60pt;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center; }
 
 h2 {
-  font-size: 48pt;
-  text-transform: capitalize;
+  font-size: 36pt;
+  text-transform: uppercase;
   text-align: center; }
 
 p {
-  font-size: 21pt; }
+  font-size: 21pt;
+  font-family: "Questrial", sans-serif; }
+
+.imagefeed p {
+  font-size: 14pt;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: white;
+  overflow: hidden; }
+
+.imagefeed h2 {
+  font-size: 24pt;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: #c9da2b; }
 
 .header {
   position: relative;
@@ -25,7 +39,6 @@ p {
   position: absolute; }
 
 .line-menu {
-  float: right;
   height: 50px;
   width: auto;
   margin-top: 6%;
@@ -37,7 +50,35 @@ nav {
   width: 70%;
   border-bottom: 3pt solid #c9da2b;
   float: right;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden; }
+
+.links-bar {
+  margin: 0 auto;
+  float: right;
+  width: 75%;
+  padding-top: 2%; }
+
+li {
+  clear: both;
+  display: inline-block;
+  padding-right: 8%;
+  text-align: right; }
+
+a {
+  color: #383e1b; }
+
+a:link {
+  clear: both;
+  text-decoration: none;
+  font-size: 28pt; }
+
+a:hover {
+  color: #c9da2b; }
+
+a:active {
+  color: #c9da2b; }
 
 .feedContainer {
   margin-left: 10%;
@@ -51,7 +92,8 @@ nav {
   height: 290px;
   width: 25%;
   border: 2px solid white;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
 
 .imagefeed img {
   width: 100%;
@@ -59,8 +101,18 @@ nav {
   object-fit: cover;
   opacity: none; }
 
-.imagefeed img:hover {
-  opacity: .35; }
+.image-hover {
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 100;
+  padding-left: 2%; }
+
+.imagefeed:hover .image-hover {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%; }
 
 #worldmap .trending-map-feed {
   text-align: center;

@@ -1,26 +1,46 @@
 $body: 'Questrial', sans-serif;
 $green: #c9da2b;
-$teal: #00FF9F;
+$dark: #383e1b;
 
 h1{
   font-size: 60pt;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
 }
 h2 {
-  font-size: 48pt;
-  text-transform: capitalize;
+  font-size: 36pt;
+  text-transform: uppercase;
   text-align: center;
 }
 p {
   font-size: 21pt;
+  font-family: $body;
 }
+
+
+
+.imagefeed p {
+  font-size: 14pt;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: white;
+  overflow: hidden;
+}
+
+.imagefeed h2{
+  font-size: 24pt;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: $green;
+}
+
 
 .header{
   position: relative;
   height: 100px;
   margin-bottom: 7%;
 }
+
 
 .logo {
   // clear: both;
@@ -34,13 +54,14 @@ p {
 
 
 .line-menu {
-  float: right;
-  height: 50px;
+   height: 50px;
   width: auto;
   margin-top: 6%;
   margin-right: 2%;
   box-sizing: border-box;
 }
+
+
 
 nav {
   // clear: both;
@@ -49,6 +70,39 @@ nav {
   border-bottom: 3pt solid $green;
   float: right;
   box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.links-bar {
+    margin: 0 auto;
+    float: right;
+    width: 75%;
+    padding-top: 2%;
+}
+
+li {
+  clear: both;
+  display: inline-block;
+  padding-right: 8%;
+  text-align: right;
+}
+
+a {
+    color: $dark;
+}
+a:link {
+  clear: both;
+  text-decoration: none;
+  font-size: 28pt;
+}
+
+a:hover {
+  color: $green;
+}
+
+a:active {
+  color: $green;
 }
 
 .feedContainer {
@@ -66,6 +120,7 @@ nav {
   width: 25%;
   border: 2px solid white;
   box-sizing: border-box;
+  position: relative;
 }
 
 .imagefeed img {
@@ -75,8 +130,25 @@ nav {
   opacity: none;
 }
 
-.imagefeed img:hover {
-  opacity: .35;
+
+// .imagefeed img:hover {
+//   opacity: .35;
+// }
+
+.image-hover {
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 100;
+  padding-left: 2%;
+}
+
+.imagefeed:hover .image-hover {
+  display: block;
+  background: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  // transition: 1s;
 }
 
 
