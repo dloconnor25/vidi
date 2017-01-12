@@ -1,6 +1,7 @@
 $body: 'Questrial', sans-serif;
 $green: #c9da2b;
 $dark: #383e1b;
+$teal: #2e966f;
 
 h1{
   font-size: 60pt;
@@ -38,7 +39,7 @@ p {
 .header{
   position: relative;
   height: 100px;
-  margin-bottom: 7%;
+  margin-bottom: 3%;
 }
 
 
@@ -76,8 +77,8 @@ nav {
 .links-bar {
     margin: 0 auto;
     float: right;
-    width: 75%;
-    padding-top: 2%;
+    width: 65%;
+    padding-top: 8%;
 }
 
 li {
@@ -103,9 +104,26 @@ a:hover {
 a:active {
   color: $green;
 }
+button a {
+  font-size: 12pt;
+}
+
+.titlerow {
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.titlerow p {
+  float: right;
+    padding-right: 12%;
+    margin-left: 40%;
+      margin: 0 auto;
+    padding-top: 3%;
+}
 
 .feedContainer {
-  // clear: both;
+  clear: both;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 2%;
@@ -128,11 +146,6 @@ a:active {
   object-fit: cover;
   opacity: none;
 }
-
-
-// .imagefeed img:hover {
-//   opacity: .35;
-// }
 
 .image-hover {
   position: absolute;
@@ -185,4 +198,182 @@ a:active {
   width: 100%;
   height: 870px;
   overflow-y: scroll;
+}
+
+#login{
+
+  .login-body {
+    // background-image: image("images/city6.jpg");
+    height: 800px;
+    background: white, .25;
+    font-family: $body;
+      text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.login-body::before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .form {
+    position: absolute;
+    background-color: white, .5;
+    width: 285px;
+    margin-top: 5%;
+    margin-left: 35%;
+    padding: 40px;
+    height: 300px;
+    width: 400px;
+  }
+  .form h2 {
+    margin: 0 0 30px;
+    line-height: 1;
+    color: $teal;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .form input {
+    outline: none;
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding: 10px 15px;
+    border: 2px solid $green;
+    color: #ccc;
+    font-family: $body;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-wieght: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+  .form input:focus {
+    color: #333;
+    border: 2px solid $green;
+  }
+  .form button {
+    cursor: pointer;
+    background: $green;
+    width: 40%;
+    padding: 10px 15px;
+    margin-left: 30%;
+    border: 0;
+    color: $dark;
+    font-family: $body;
+    font-size: 18pt;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5%;
+  }
+  a {
+    font-size: 18pt;
+  }
+  .form button:hover {
+    background: $teal;
+  }
+  .square {
+    height: 900px;
+    width: 900px;
+color: purple;
+opacity: .5;
+z-index: 1000;
+  }
+}
+
+#sign-up {
+  .sign-up-body {
+    // background-image: image("images/city6.jpg");
+    height: 800px;
+    background: white, .25;
+    font-family: $body;
+      text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .sign-up-body::before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .form {
+    position: absolute;
+    background-color: white, .5;
+    width: 285px;
+    margin-top: 5%;
+    margin-left: 35%;
+    padding: 40px;
+    height: 300px;
+    width: 400px;
+  }
+  .form h2 {
+    margin: 0 0 30px;
+    line-height: 1;
+    color: $teal;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .form input {
+    outline: none;
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding: 10px 15px;
+    border: 2px solid $green;
+    color: #ccc;
+    font-family: $body;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-wieght: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+  .form input:focus {
+    color: #333;
+    border: 2px solid $green;
+  }
+  .form button {
+    cursor: pointer;
+    background: $green;
+    width: 40%;
+    padding: 10px 15px;
+    margin-left: 30%;
+    border: 0;
+    color: $dark;
+    font-family: $body;
+    font-size: 18pt;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5%;
+  }
+  a {
+    font-size: 18pt;
+  }
+  .form button:hover {
+    background: $teal;
+  }
 }
