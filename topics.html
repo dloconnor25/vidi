@@ -5,9 +5,16 @@
     <title>topic preference</title>
   <link href="https://necolas.github.io/normalize.css/5.0.0/normalize.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/image-picker.css">
+
       <link rel="stylesheet" href="css/style.css">
+
       <link rel="stylesheet" href="https://use.fontawesome.com/91125e5e17.js">
-    <script src="script.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+      <script src="css/image-picker.js"></script>
   </head>
   <body>
 
@@ -17,19 +24,59 @@
       <nav class="hamburger-menu">
 
         <ul class="links-bar">
-      <li><a href="file:///Users/deirdreoconnor/Desktop/github/Homework/vidi/index.html#">FEED.</a></li>
-      <li><a href="#">DISCOVER.</a></li>
-      <li><a href="file:///Users/deirdreoconnor/Desktop/github/Homework/vidi/profile.html">PROFILE.</a></li>
+      <li><a href="feed.html#">FEED.</a></li>
+      <li><a href="worldmap.html">DISCOVER.</a></li>
+      <li><a href="profile.html">PROFILE.</a></li>
     </ul>
        </nav>
     </div>
 
+<div id="topics">
     <div class="user-setup">
-      <h1>this is where the user sets preferences</h1>
+      <p>Choose the activities and places you prefer to see on your feed...</p>
     </div>
 
+<select class="image-picker show-html" multiple="multiple">
+
+  <option data-img-src="images/blacktemple.png" value="13"></option>
+  <option data-img-src="images/brycecanyon.png" value="14"></option>
+  <option data-img-src="images/church.png" value="15"></option>
+  <option data-img-src="images/cityview.png" value="16"></option>
 
 
-    <script src="css/script.js"></script>
+
+  <option data-img-src="images/girlspool.png" value="17"></option>
+  <option data-img-src="images/graffiti.png" value="18"></option>
+  <option data-img-src="images/desert.png" value="19"></option>
+  <option data-img-src="images/waterhut.png" value="20"></option>
+
+  <option data-img-src="images/city6.jpg" value="1"></option>
+  <option data-img-src="images/mntcabin.png" value="2"></option>
+  <option data-img-src="images/redrocks.png" value="3"></option>
+  <option data-img-src="images/ridgelinehike.png" value="4"></option>
+
+  <option data-img-src="images/pizza.png" value="5"></option>
+  <option data-img-src="images/waterfall.png" value="6"></option>
+  <option data-img-src="images/windingstairs.png" value="7"></option>
+  <option data-img-src="images/lifeguardstand.png" value="8"></option>
+
+  <option data-img-src="images/hotspring.png" value="9"></option>
+  <option data-img-src="images/coastline.png" value="10"></option>
+  <option data-img-src="images/cactus.png" value="11"></option>
+  <option data-img-src="images/bookstore.png" value="12"></option>
+</select>
+
+<script>
+$("select").imagepicker()
+</script>
+
+<div class="form">
+<button><a href="profile.html">Continue</a></button>
+</div>
+
+</div>
+
+
+    <script src="css/topic.js"></script>
   </body>
 </html>

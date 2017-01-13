@@ -84,13 +84,13 @@ button a {
   font-size: 12pt; }
 
 .titlerow {
-  height: 50px;
+  height: 60px;
   width: 100%;
   margin: 0 auto; }
 
 .titlerow p {
   float: right;
-  padding-right: 12%;
+  padding-right: 10.5%;
   margin-left: 40%;
   margin: 0 auto;
   padding-top: 3%; }
@@ -122,13 +122,21 @@ button a {
   top: 0;
   display: none;
   z-index: 100;
-  padding-left: 2%; }
+  overflow: hidden; }
 
 .imagefeed:hover .image-hover {
   display: block;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%; }
+
+.imagefeed:hover p {
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden; }
+
+.imagefeed:hover h2 {
+  margin-bottom: 0; }
 
 #worldmap .trending-map-feed {
   text-align: center;
@@ -183,9 +191,9 @@ button a {
   width: 400px; }
 #login .form h2 {
   margin: 0 0 30px;
-  line-height: 1;
+  line-height: 1.5;
   color: #2e966f;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 600; }
 #login .form input {
   outline: none;
@@ -229,12 +237,6 @@ button a {
   font-size: 18pt; }
 #login .form button:hover {
   background: #2e966f; }
-#login .square {
-  height: 900px;
-  width: 900px;
-  color: purple;
-  opacity: .5;
-  z-index: 1000; }
 
 #sign-up .sign-up-body {
   height: 800px;
@@ -262,9 +264,9 @@ button a {
   width: 400px; }
 #sign-up .form h2 {
   margin: 0 0 30px;
-  line-height: 1;
+  line-height: 1.5;
   color: #2e966f;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 600; }
 #sign-up .form input {
   outline: none;
@@ -308,5 +310,61 @@ button a {
   font-size: 18pt; }
 #sign-up .form button:hover {
   background: #2e966f; }
+
+#topics .user-setup {
+  height: 60px;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 30%;
+  box-sizing: border-box;
+  overflow: hidden; }
+#topics .user-setup p {
+  float: right;
+  font-size: 21pt;
+  padding-right: 8.5%;
+  margin-left: 40%;
+  margin: 0 auto;
+  padding-top: 3%; }
+#topics ul.thumbnails.image_picker_selector li {
+  float: none;
+  margin: 0; }
+#topics ul.thumbnails.image_picker_selector {
+  overflow: inherit; }
+#topics ul.thumbnails.image_picker_selector li .thumbnail {
+  height: 290px;
+  width: 290px;
+  border: none; }
+#topics ul.thumbnails.image_picker_selector li .thumbnail.selected {
+  background: #c9da2b; }
+#topics li {
+  padding: 1%; }
+#topics ul {
+  padding-left: 4%;
+  padding-right: 2%; }
+#topics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+#topics .form button {
+  cursor: pointer;
+  background: #c9da2b;
+  width: 20%;
+  height: 80px;
+  padding: 10px 15px;
+  margin-left: 40%;
+  border: 0;
+  color: #383e1b;
+  font-family: "Questrial", sans-serif;
+  font-size: 18pt;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 5%; }
+#topics a {
+  font-size: 24pt; }
+#topics .form button:hover {
+  background: #2e966f; }
+#topics .form {
+  margin-bottom: 5%; }
 
 /*# sourceMappingURL=style.css.map */
