@@ -367,4 +367,18 @@ button a {
 #topics .form {
   margin-bottom: 5%; }
 
+#profile .snip1336 {
+  font-family: "Questrial", sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: white; }
+
 /*# sourceMappingURL=style.css.map */
