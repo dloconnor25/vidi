@@ -465,14 +465,71 @@ a {
     position: relative;
     float: left;
     overflow: hidden;
+    margin-top: 5%;
     margin: 10px 1%;
-    min-width: 230px;
-    max-width: 315px;
+    min-width: 130px;
+    max-width: 215px;
     width: 100%;
-    color: white;
+    color: $dark;
     text-align: left;
-    line-height: 1.4em;
     background-color: white;
+  }
+
+  .snip1336 h2 {
+    font-size: 24pt;
+      line-height: .8em;
+  }
+
+  .snip1336 h3 {
+    font-size: 14pt;
+      line-height: .8em;
+      margin: 0 auto;
+  }
+  .snip1336 .follow {
+    background: $green;
+    color: $dark;
+  }
+
+  .snip1336 .follow:hover {
+    background: $teal;
+    color: $green;
+  }
+  .snip1336 figcaption {
+      width: 100%;
+      position: relative;
+      padding: 0;
+  }
+
+
+  figure {
+    height: 200px;
+    width: 100%;
+  }
+
+  figure .snip1336 .snip1336.hover {
+  }
+
+  figure img{
+    height: 100px;
+    width: 100%;
+  }
+
+  .feedContainer {
+    clear: both;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .imagefeed {
+    height: 150px;
+    width: 20%;
+    border: 5px solid white;
+    box-sizing: border-box;
+    position: relative;
   }
 
 }

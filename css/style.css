@@ -372,13 +372,50 @@ button a {
   position: relative;
   float: left;
   overflow: hidden;
+  margin-top: 5%;
   margin: 10px 1%;
-  min-width: 230px;
-  max-width: 315px;
+  min-width: 130px;
+  max-width: 215px;
   width: 100%;
-  color: white;
+  color: #383e1b;
   text-align: left;
-  line-height: 1.4em;
   background-color: white; }
+#profile .snip1336 h2 {
+  font-size: 24pt;
+  line-height: .8em; }
+#profile .snip1336 h3 {
+  font-size: 14pt;
+  line-height: .8em;
+  margin: 0 auto; }
+#profile .snip1336 .follow {
+  background: #c9da2b;
+  color: #383e1b; }
+#profile .snip1336 .follow:hover {
+  background: #2e966f;
+  color: #c9da2b; }
+#profile .snip1336 figcaption {
+  width: 100%;
+  position: relative;
+  padding: 0; }
+#profile figure {
+  height: 200px;
+  width: 100%; }
+#profile figure img {
+  height: 100px;
+  width: 100%; }
+#profile .feedContainer {
+  clear: both;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; }
+#profile .imagefeed {
+  height: 150px;
+  width: 20%;
+  border: 5px solid white;
+  box-sizing: border-box;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
