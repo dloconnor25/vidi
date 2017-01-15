@@ -43,24 +43,13 @@ p {
 
 
 .logo {
- height: 220px;
+ height: 200px;
  padding-left: 0px;
  padding-top: 0px;
  padding: 10px;
  box-sizing: border-box;
  position: absolute;
 }
-
-
-.line-menu {
-  height: 50px;
- width: auto;
- margin-top: 6%;
- margin-right: 2%;
- box-sizing: border-box;
-}
-
-
 
 nav {
  // clear: both;
@@ -74,15 +63,14 @@ nav {
 }
 
 .links-bar {
-   margin: 0 auto;
    float: right;
-   width: 75%;
+   width: 70%;
    padding-top: 2%;
 }
 
 li {
  clear: both;
- display: inline-block;
+ display: inline;
  padding-right: 8%;
  text-align: right;
 }
@@ -90,10 +78,12 @@ li {
 a {
    color: $dark;
 }
+
 a:link {
  clear: both;
  text-decoration: none;
- font-size: 28pt;
+ font-size: 21pt;
+ font-family: $body;
 }
 
 a:hover {
@@ -108,7 +98,7 @@ a:active {
   // clear: both;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 2%;
+  // margin-top: 2%;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -116,7 +106,7 @@ a:active {
 
 .imagefeed {
   height: 290px;
-  width: 25%;
+  width: 100%;
   border: 2px solid white;
   box-sizing: border-box;
   position: relative;
@@ -129,43 +119,13 @@ a:active {
   opacity: none;
 }
 
-
-// .imagefeed img:hover {
-//   opacity: .35;
-// }
-
-.image-hover {
-  position: absolute;
-  top: 0;
-  display: none;
-  z-index: 100;
-  padding-left: 2%;
-}
-
-.imagefeed:hover .image-hover {
-  display: block;
-  background: rgba(0, 0, 0, .5);
-  width: 100%;
-  height: 100%;
-  // transition: 1s;
-}
-
-
-
-#worldmap .trending-map-feed{
-  text-align: center;
-  font-size: 36px;
-  margin: 0;
-  padding-top: 20px;
-  font-family: $body;
-}
-
 #worldmap .feedContainer {
   margin-right: 0;
-  margin-left: 40%;
+  // margin-left: 40%;
   height: 870px;
   overflow-y: scroll;
   float: right;
+  width: 29%;
 
 }
 
@@ -178,7 +138,7 @@ a:active {
   float: left;
   width: 70%;
   height: 870px;
-  // background-color: $green;
+  background-color: $green;
   // overflow-y: scroll;
   overflow: hidden;
   position: absolute;
@@ -190,10 +150,60 @@ a:active {
   height: 865px;
 }
 
-#worldmap .map-point-1{
-  height: 20px;
-  width: 20px;
-  background-color: $dark;
-  border-radius: 100%;
-  position: relative;
+@media (max-width: 767px) {
+
+  #worldmap .map-container{
+    width:100%;
+    height: 435px;
+    float: none;
+    overflow: hidden;
+    position: relative;
+  }
+   #worldmap .feedContainer{
+    width: 100%;
+    height: 435px;
+    margin-top: 2%;
+  }
+  .logo{
+    height: 100px;
+  }
+  nav{
+    width: 70%;
+    margin-bottom: 10px;
+    font-size: 26px;
+    text-align: center;
+
+  a:link{
+    font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px-1024px) {
+
+  #worldmap .map-container{
+    width:100%;
+    height: 435px;
+    float: none;
+    overflow: hidden;
+    position: relative;
+  }
+   #worldmap .feedContainer{
+    width: 100%;
+    height: 435px;
+    margin-top: 2%;
+  }
+  #worldmap .logo{
+    height: 100px;
+  }
+  #worldmap nav{
+    width: 70%;
+    margin-bottom: 10px;
+    font-size: 26px;
+    text-align: center;
+
+  #worldmap a:link{
+    font-size: 16px;
+    }
+  }
 }
