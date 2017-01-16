@@ -2,8 +2,6 @@ $(document).ready(function(){
   //Displays & hides content based on user's country focus.
   $('.amcharts-map-area-CN').click(function(){
   $('div.china').slideToggle(function(){
-
-
   });
   });
 
@@ -18,8 +16,6 @@ $(document).ready(function(){
 
   });
   });
-
-
 });
 
 var map = AmCharts.makeChart( "chartdiv", {
@@ -49,7 +45,6 @@ var map = AmCharts.makeChart( "chartdiv", {
     "position": "bottom-right"
   }
 });
-
 
 // function i_got_clicked(map_object){
 //   //This only gets your latitude and longitude if the map is zoomed out.

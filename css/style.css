@@ -88,6 +88,13 @@ a:active {
 .imagefeed img:hover {
   opacity: .7; }
 
+.BR-content, .CN-content, .trending-content {
+  text-align: center;
+  margin: 0;
+  font-family: "Questrial", sans-serif;
+  background-color: #c9da2b;
+  font-size: 21px; }
+
 #worldmap .map-container {
   float: left;
   width: 70%;
@@ -102,7 +109,7 @@ a:active {
 #worldmap i {
   z-index: 10;
   color: white;
-  position: absolute;
+  position: relative;
   font-size: 2em; }
 #worldmap #chartdiv {
   width: 100%;

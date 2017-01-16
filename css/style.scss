@@ -109,6 +109,22 @@ a:active {
   opacity: .7;
 }
 
+.BR-content{
+  text-align: center;
+  margin: 0;
+  font-family: $body;
+  background-color: $green;
+  font-size: 21px;
+}
+
+.CN-content{
+  @extend .BR-content ;
+}
+
+.trending-content{
+  @extend .BR-content;
+}
+
 #worldmap {
 
 .map-container {
@@ -132,7 +148,7 @@ a:active {
 i {
   z-index: 10;
   color: white;
-  position: absolute;
+  position: relative;
   font-size: 2em;
 }
 
