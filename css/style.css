@@ -28,15 +28,22 @@ p {
 .header {
   position: relative;
   height: 100px;
-  margin-bottom: 7%; }
+  margin-bottom: 3%; }
 
 .logo {
-  height: 200px;
+  height: 220px;
   padding-left: 0px;
   padding-top: 0px;
   padding: 10px;
   box-sizing: border-box;
   position: absolute; }
+
+.line-menu {
+  height: 50px;
+  width: auto;
+  margin-top: 6%;
+  margin-right: 2%;
+  box-sizing: border-box; }
 
 nav {
   height: 130px;
@@ -48,13 +55,14 @@ nav {
   overflow: hidden; }
 
 .links-bar {
+  margin: 0 auto;
   float: right;
-  width: 70%;
-  padding-top: 2%; }
+  width: 65%;
+  padding-top: 8%; }
 
 li {
   clear: both;
-  display: inline;
+  display: inline-block;
   padding-right: 8%;
   text-align: right; }
 
@@ -64,8 +72,7 @@ a {
 a:link {
   clear: both;
   text-decoration: none;
-  font-size: 21pt;
-  font-family: "Questrial", sans-serif; }
+  font-size: 28pt; }
 
 a:hover {
   color: #c9da2b; }
@@ -73,9 +80,32 @@ a:hover {
 a:active {
   color: #c9da2b; }
 
+button a {
+  font-size: 12pt; }
+
+.titlerow {
+  height: 60px;
+  width: 100%;
+  margin: 0 auto; }
+
+.titlerow p {
+  float: right;
+  padding-right: 10.5%;
+  margin-left: 40%;
+  padding-top: 3%; }
+
+.feedContainer {
+  clear: both;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; }
+
 .imagefeed {
   height: 290px;
-  width: 100%;
+  width: 25%;
   border: 2px solid white;
   box-sizing: border-box;
   position: relative; }
@@ -83,18 +113,55 @@ a:active {
 .imagefeed img {
   width: 100%;
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  opacity: none; }
 
-.imagefeed img:hover {
-  opacity: .7; }
+.image-hover {
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 100;
+  overflow: hidden; }
 
-.BR-content, .CN-content, .trending-content {
-  text-align: center;
-  margin: 0;
-  font-family: "Questrial", sans-serif;
-  background-color: #c9da2b;
-  font-size: 21px; }
+.imagefeed:hover .image-hover {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%; }
 
+.imagefeed:hover p {
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden; }
+
+.imagefeed:hover h2 {
+  margin-bottom: 0; }
+
+#worldmap .imagefeed {
+  height: 290px;
+  width: 100%; }
+#worldmap .imagefeed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: none; }
+#worldmap .image-hover {
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 100;
+  overflow: hidden; }
+#worldmap .imagefeed:hover .image-hover {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%; }
+#worldmap .imagefeed:hover p {
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden; }
+#worldmap .imagefeed:hover h2 {
+  margin-bottom: 0; }
 #worldmap .map-container {
   float: left;
   width: 70%;
@@ -102,6 +169,7 @@ a:active {
   overflow: hidden;
   position: absolute; }
 #worldmap .feedContainer {
+  margin-right: 0;
   height: 870px;
   overflow-y: scroll;
   float: right;
@@ -113,7 +181,7 @@ a:active {
   font-size: 2em; }
 #worldmap #chartdiv {
   width: 100%;
-  height: 865px; }
+  height: 870px; }
 
 @media (max-width: 767px) {
   #worldmap .map-container {

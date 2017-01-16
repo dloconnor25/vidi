@@ -2,52 +2,65 @@ $body: 'Questrial', sans-serif;
 $green: #c9da2b;
 $dark: #383e1b;
 
-h1 {
-  font-size: 60pt;
-  text-transform: uppercase;
-  text-align: center;
+h1{
+ font-size: 60pt;
+ text-transform: uppercase;
+ text-align: center;
 }
-
 h2 {
-  font-size: 36pt;
-  text-transform: uppercase;
-  text-align: center;
+ font-size: 36pt;
+ text-transform: uppercase;
+ text-align: center;
+}
+p {
+ font-size: 21pt;
+ font-family: $body;
 }
 
-p {
-  font-size: 21pt;
-  font-family: $body;
-}
+
 
 .imagefeed p {
-  font-size: 14pt;
-  padding-left: 1%;
-  padding-right: 1%;
-  color: white;
-  overflow: hidden;
+ font-size: 14pt;
+ padding-left: 1%;
+ padding-right: 1%;
+ color: white;
+ overflow: hidden;
 }
 
-.imagefeed h2 {
-  font-size: 24pt;
-  padding-left: 1%;
-  padding-right: 1%;
-  color: $green;
+.imagefeed h2{
+ font-size: 24pt;
+ padding-left: 1%;
+ padding-right: 1%;
+ color: $green;
 }
 
-.header {
+
+.header{
  position: relative;
  height: 100px;
- margin-bottom: 7%;
+ margin-bottom: 3%;
 }
 
+
 .logo {
- height: 200px;
+ height: 220px;
  padding-left: 0px;
  padding-top: 0px;
  padding: 10px;
  box-sizing: border-box;
  position: absolute;
 }
+
+
+.line-menu {
+  height: 50px;
+ width: auto;
+ margin-top: 6%;
+ margin-right: 2%;
+ box-sizing: border-box;
+}
+
+
 
 nav {
  // clear: both;
@@ -61,14 +74,15 @@ nav {
 }
 
 .links-bar {
+   margin: 0 auto;
    float: right;
-   width: 70%;
-   padding-top: 2%;
+   width: 65%;
+   padding-top: 8%;
 }
 
 li {
  clear: both;
- display: inline;
+ display: inline-block;
  padding-right: 8%;
  text-align: right;
 }
@@ -76,12 +90,10 @@ li {
 a {
    color: $dark;
 }
-
 a:link {
  clear: both;
  text-decoration: none;
- font-size: 21pt;
- font-family: $body;
+ font-size: 28pt;
 }
 
 a:hover {
@@ -91,41 +103,129 @@ a:hover {
 a:active {
  color: $green;
 }
+button a {
+ font-size: 12pt;
+}
+
+.titlerow {
+ height: 60px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.titlerow p {
+ float: right;
+ padding-right: 10.5%;
+ margin-left: 40%;
+ padding-top: 3%;
+}
+
+.feedContainer {
+ clear: both;
+ margin-left: 10%;
+ margin-right: 10%;
+ margin-top: 2%;
+ display: flex;
+ flex-wrap: wrap;
+ overflow: hidden;
+}
+
 .imagefeed {
-  height: 290px;
-  width: 100%;
-  border: 2px solid white;
-  box-sizing: border-box;
-  position: relative;
+ height: 290px;
+ width: 25%;
+ border: 2px solid white;
+ box-sizing: border-box;
+ position: relative;
 }
 
 .imagefeed img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ opacity: none;
 }
 
-.imagefeed img:hover{
-  opacity: .7;
+.image-hover {
+ position: absolute;
+ top: 0;
+ display: none;
+ z-index: 100;
+ overflow: hidden;
 }
 
-.BR-content{
-  text-align: center;
-  margin: 0;
-  font-family: $body;
-  background-color: $green;
-  font-size: 21px;
+.imagefeed:hover .image-hover {
+ display: block;
+ background: rgba(0, 0, 0, .7);
+ width: 100%;
+ height: 100%;
 }
 
-.CN-content{
-  @extend .BR-content ;
+.imagefeed:hover p {
+   margin-left: 5%;
+   margin-right: 5%;
+   // margin-bottom: 8%;
+     overflow: hidden;
 }
 
-.trending-content{
-  @extend .BR-content;
+.imagefeed:hover h2 {
+ margin-bottom: 0;
 }
 
 #worldmap {
+
+// .BR-content{
+//     text-align: center;
+//     margin: 0;
+//     font-family: $body;
+//     background-color: $green;
+//     font-size: 21px;
+//   }
+
+// .CN-content{
+//     @extend .BR-content ;
+//   }
+
+  // .trending-content{
+  //   @extend .BR-content;
+  // }
+
+.imagefeed {
+   height: 290px;
+   width: 100%;
+}
+
+.imagefeed img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   opacity: none;
+}
+
+.image-hover {
+   position: absolute;
+   top: 0;
+   display: none;
+   z-index: 100;
+   overflow: hidden;
+}
+
+.imagefeed:hover .image-hover {
+   display: block;
+   background: rgba(0, 0, 0, .7);
+   width: 100%;
+   height: 100%;
+}
+
+.imagefeed:hover p {
+   margin-left: 5%;
+   margin-right: 5%;
+// margin-bottom: 8%;
+  overflow: hidden;
+}
+
+.imagefeed:hover h2 {
+  margin-bottom: 0;
+}
 
 .map-container {
   // clear: both;
@@ -137,8 +237,7 @@ a:active {
 }
 
 .feedContainer {
-  // margin-right: 0;
-  // margin-left: 40%;
+  margin-right: 0;
   height: 870px;
   overflow-y: scroll;
   float: right;
@@ -154,7 +253,7 @@ i {
 
 #chartdiv {
   width: 100%;
-  height: 865px;
+  height: 870px;
   }
 }
 
