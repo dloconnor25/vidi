@@ -298,7 +298,7 @@ label::before {
 // content is the animation within the landing page
   #content{
     .content{
-      height:110vh;
+      height:70vh;
       width: 100%;
       overflow:hidden;
     background:url('http://tutoriales.anaislab.com/img/background.jpg')no-repeat 0 0;
@@ -333,42 +333,44 @@ label::before {
   border-radius: 50%;
   border:12px solid $green;
   background-color: rgba(225,225,225,.75);
-  width:800px;
-  height: 800px;
+  width:500px;
+  height: 500px;
   top:50%;
   left:50%;
 }
 
 .tag-line h1 {
+  margin: 0 auto;
+  margin-top: 11%;
   text-transform:uppercase;
   color:white;
-  font-weight:bold;
-  font-size:68pt;
-  line-height:100px;
-  top:50%;
-  left:50%;
+  font-weight:900;
+  font-size:50pt;
+  line-height:70px;
+  top:55%;
+  left:55%;
   z-index:99;
-  width:100%;
+  width:90%;
   text-align:center;
   font-family:$body;
 }
 
  .tag-line p{
    text-transform:uppercase;
-   top:60%;
+   top:75%;
    left:50%;
    -webkit-transform:translate(-50%, -50%);
    -moz-transform:translate(-50%, -50%);
    -o-transform:translate(-50%, -50%);
    transform:translate(-50%, -50%);
    position:absolute;
-   z-index:99;
-   width:75%;
+   z-index: 99;
+   width: 76%;
    text-align:center;
    font-family:$body;
    color: $dark;
    font-weight: 100;
-   font-size: 16pt;
+   font-size: 12pt;
  }
  /*Mountains*/
  .layer.mountain{
