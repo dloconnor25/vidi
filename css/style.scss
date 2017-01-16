@@ -460,15 +460,174 @@ a {
 }}
 
 #profile {
-  .snip1336 {
+
+  a h1 h2 h3 h4 p {
+    font-family: $body;
+  }
+  .user {
+      height: 850px;
+      width: 100%;
+      margin-top: 8%;
+      margin-bottom: 5%;
+    }
+  .myphoto {
+      position: relative;
+      float: left;
+      height: 420px;
+      width: 100%;
+      margin-bottom: 1%;
+
+    }
+
+  .text-bio  a {
+    clear: both;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    font-size: 24pt;
+    text-transform: uppercase;
+    display: inline-block;
+    opacity: 0.7;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    margin: 5px;
+    padding-top: 15px;
+    box-sizing: border-box;
+  }
+
+  .post, .other, p {
+    font-size: 9pt;
+  }
+
+  .text-bio a:hover {
+    opacity: .75;
+    color: $dark;
+    background-color: white;
+  }
+
+.fig img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 35%;
+  z-index: 1;
+  padding: 10px;
+}
+
+.text-bio{
+  margin: 0 auto;
+height: 850px;
+  background: $green;
+}
+
+
+    .text-bio h1 {
+      font-size: 60pt;
+      color: white;
+        line-height: .8em;
+        margin-bottom: 0;
+    }
+    .text-bio h3 {
+      text-align: center;
+      margin-left: 15%;
+      font-size: 21pt;
+      width: 70%;
+      color: $dark;
+      font-weight: 300;
+    }
+
+     .post, .edit, .other {
+      color: white;
+    }
+
+  .edit:hover, .post:hover, .other:hover{
+      background: $teal;
+    }
+
+    .links {
+      margin-left: 38%;
+    }
+
+    .myphoto img{
+      height: 420px;
+      width: inherit;
+      object-fit: cover;
+      object-position: center;
+        opacity: 0.85;
+    }
+
+i {
+  display: inline-block;
+  float: left;
+}
+    .fa-camera {
+      clear: both;
+      margin-left: 38%;
+      height: 70px;
+      width: 70px;
+      color: $dark;
+    }
+
+    .fa-camera:hover {
+      color: white;
+    }
+
+    .fa-camera p {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .fa-th {
+      height: 70px;
+      width: 70px;
+      margin-left: 5%;
+      color: $dark;
+    }
+
+    .fa-th:hover {
+      color: white;
+    }
+
+    .fa-th p {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+
+    .fa-cog {
+      height: 70px;
+      width: 60px;
+      margin-left: 5%;
+      color: $dark;
+    }
+
+    .fa-cog:hover {
+      color: white;
+    }
+
+    .fa-cog p {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+.rec {
+    margin: auto;
+    display: block;
+    width: 88.5%;
+    margin-top: 5%;
+  }
+.snip1336 {
     font-family: $body;
     position: relative;
     float: left;
     overflow: hidden;
     margin-top: 5%;
     margin: 10px 1%;
-    min-width: 130px;
-    max-width: 215px;
+    max-width: 200px;
     width: 100%;
     color: $dark;
     text-align: left;
@@ -476,6 +635,7 @@ a {
   }
 
   .snip1336 h2 {
+    clear: both;
     font-size: 24pt;
       line-height: .8em;
   }
@@ -501,17 +661,11 @@ a {
   }
 
 
-  figure {
-    height: 200px;
-    width: 100%;
-  }
-
-  figure .snip1336 .snip1336.hover {
-  }
-
   figure img{
     height: 100px;
-    width: 100%;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
   }
 
   .feedContainer {
@@ -519,6 +673,7 @@ a {
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 2%;
+      border-top: 3pt solid $green;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;

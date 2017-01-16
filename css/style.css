@@ -367,6 +367,117 @@ button a {
 #topics .form {
   margin-bottom: 5%; }
 
+#profile a h1 h2 h3 h4 p {
+  font-family: "Questrial", sans-serif; }
+#profile .user {
+  height: 850px;
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 5%; }
+#profile .myphoto {
+  position: relative;
+  float: left;
+  height: 420px;
+  width: 100%;
+  margin-bottom: 1%; }
+#profile .text-bio a {
+  clear: both;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  font-size: 24pt;
+  text-transform: uppercase;
+  display: inline-block;
+  opacity: 0.7;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding-top: 15px;
+  box-sizing: border-box; }
+#profile .post, #profile .other, #profile p {
+  font-size: 9pt; }
+#profile .text-bio a:hover {
+  opacity: .75;
+  color: #383e1b;
+  background-color: white; }
+#profile .fig img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 35%;
+  z-index: 1;
+  padding: 10px; }
+#profile .text-bio {
+  margin: 0 auto;
+  height: 850px;
+  background: #c9da2b; }
+#profile .text-bio h1 {
+  font-size: 60pt;
+  color: white;
+  line-height: .8em;
+  margin-bottom: 0; }
+#profile .text-bio h3 {
+  text-align: center;
+  margin-left: 15%;
+  font-size: 21pt;
+  width: 70%;
+  color: #383e1b;
+  font-weight: 300; }
+#profile .post, #profile .edit, #profile .other {
+  color: white; }
+#profile .edit:hover, #profile .post:hover, #profile .other:hover {
+  background: #2e966f; }
+#profile .links {
+  margin-left: 38%; }
+#profile .myphoto img {
+  height: 420px;
+  width: inherit;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.85; }
+#profile i {
+  display: inline-block;
+  float: left; }
+#profile .fa-camera {
+  clear: both;
+  margin-left: 38%;
+  height: 70px;
+  width: 70px;
+  color: #383e1b; }
+#profile .fa-camera:hover {
+  color: white; }
+#profile .fa-camera p {
+  text-align: center;
+  margin: 0 auto; }
+#profile .fa-th {
+  height: 70px;
+  width: 70px;
+  margin-left: 5%;
+  color: #383e1b; }
+#profile .fa-th:hover {
+  color: white; }
+#profile .fa-th p {
+  text-align: center;
+  margin: 0 auto; }
+#profile .fa-cog {
+  height: 70px;
+  width: 60px;
+  margin-left: 5%;
+  color: #383e1b; }
+#profile .fa-cog:hover {
+  color: white; }
+#profile .fa-cog p {
+  text-align: center;
+  margin: 0 auto; }
+#profile .rec {
+  margin: auto;
+  display: block;
+  width: 88.5%;
+  margin-top: 5%; }
 #profile .snip1336 {
   font-family: "Questrial", sans-serif;
   position: relative;
@@ -374,13 +485,13 @@ button a {
   overflow: hidden;
   margin-top: 5%;
   margin: 10px 1%;
-  min-width: 130px;
-  max-width: 215px;
+  max-width: 200px;
   width: 100%;
   color: #383e1b;
   text-align: left;
   background-color: white; }
 #profile .snip1336 h2 {
+  clear: both;
   font-size: 24pt;
   line-height: .8em; }
 #profile .snip1336 h3 {
@@ -397,17 +508,17 @@ button a {
   width: 100%;
   position: relative;
   padding: 0; }
-#profile figure {
-  height: 200px;
-  width: 100%; }
 #profile figure img {
   height: 100px;
-  width: 100%; }
+  width: inherit;
+  object-fit: cover;
+  object-position: center; }
 #profile .feedContainer {
   clear: both;
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 2%;
+  border-top: 3pt solid #c9da2b;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden; }
