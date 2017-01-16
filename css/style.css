@@ -85,6 +85,9 @@ a:active {
   height: 100%;
   object-fit: cover; }
 
+.imagefeed img:hover {
+  opacity: .7; }
+
 #worldmap .map-container {
   float: left;
   width: 70%;
