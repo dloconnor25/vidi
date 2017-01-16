@@ -174,6 +174,236 @@ button a {
   margin-bottom: 0;
 }
 
+#follow {
+
+.followers {
+  margin-top: 2%;
+  border-top: 1px solid $green;
+}
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  color: #666;
+}
+label:hover {
+  color: $green;
+}
+label::before {
+  font-family: $body;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  border-bottom: 1px solid $green;
+}
+
+#toggle:checked ~ #expand {
+  height: 250px;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+
+.rec {
+    margin: auto;
+    display: block;
+    width: 88.5%;
+    margin-top: 1%;
+  }
+.snip1336 {
+    font-family: $body;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-top: 5%;
+    margin: 10px 1%;
+    max-width: 200px;
+    width: 100%;
+    color: $dark;
+    text-align: left;
+    background-color: white;
+  }
+
+  .snip1336 h2 {
+    clear: both;
+    font-size: 24pt;
+      line-height: .8em;
+  }
+
+  .snip1336 h3 {
+    font-size: 14pt;
+      line-height: .8em;
+      margin: 0 auto;
+  }
+  .snip1336 .follow {
+    background: $green;
+    color: $dark;
+  }
+
+  .snip1336 .follow:hover {
+    background: $teal;
+    color: $green;
+  }
+  .snip1336 figcaption {
+      width: 100%;
+      position: relative;
+      padding: 0;
+  }
+
+
+  figure img{
+    height: 100px;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .footer {
+    height: 50px;
+    width: 100%;
+  }
+}
+
+// content is the animation within the landing page
+  #content{
+    .content{
+      height:110vh;
+      width: 100%;
+      overflow:hidden;
+    background:url('http://tutoriales.anaislab.com/img/background.jpg')no-repeat 0 0;
+   background-attachment:fixed;
+   background-size:cover;
+   position:relative;
+ }
+ .content:after {
+   content:'';
+   width:100%;
+   height:100%;
+   position:absolute;
+   top:0;
+   left:0;
+   background:#61b2d8;
+   background:-moz-linear-gradient(-45deg, #61b2d8 0%, #f9a4f2 100%);
+   background:-webkit-linear-gradient(-45deg, #61b2d8 0%, #f9a4f2 100%);
+   background:linear-gradient(135deg, #61b2d8 0%, #f9a4f2 100%);
+   filter:"progid: DXImageTransform.Microsoft.gradient( startColorstr='#61b2d8', endColorstr='#f9a4f2', GradientType=1)";
+   opacity:.5;
+   z-index:100;
+ }
+
+  .tag-line {
+    -webkit-transform:translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    position: absolute;
+  z-index:1000;
+  width:100%;
+  border-radius: 50%;
+  border:12px solid $green;
+  background-color: rgba(225,225,225,.75);
+  width:800px;
+  height: 800px;
+  top:50%;
+  left:50%;
+}
+
+.tag-line h1 {
+  text-transform:uppercase;
+  color:white;
+  font-weight:bold;
+  font-size:68pt;
+  line-height:100px;
+  top:50%;
+  left:50%;
+  z-index:99;
+  width:100%;
+  text-align:center;
+  font-family:$body;
+}
+
+ .tag-line p{
+   text-transform:uppercase;
+   top:60%;
+   left:50%;
+   -webkit-transform:translate(-50%, -50%);
+   -moz-transform:translate(-50%, -50%);
+   -o-transform:translate(-50%, -50%);
+   transform:translate(-50%, -50%);
+   position:absolute;
+   z-index:99;
+   width:75%;
+   text-align:center;
+   font-family:$body;
+   color: $dark;
+   font-weight: 100;
+   font-size: 16pt;
+ }
+ /*Mountains*/
+ .layer.mountain{
+   width:100%;
+   height:100%;
+   background-size:cover!important;
+   position:absolute;
+   left:0;
+   top:0;
+ }
+ .layer.mountain.one{background:url('http://tutoriales.anaislab.com/img/layer1.png')no-repeat left bottom;z-index:10;}
+ .layer.mountain.two{background:url('http://tutoriales.anaislab.com/img/layer3.png')no-repeat 0 0;z-index:8;}
+ .layer.mountain.three{background:url('http://tutoriales.anaislab.com/img/layer4.png')no-repeat 0 0;z-index:6;}
+ /*Cloud*/
+ .layer.cloud img{
+   position:absolute;
+   opacity:0.6;
+   right:0;
+   animation-name:cloud;
+   animation-iteration-count:infinite;
+   will-change:left;
+ }
+ .layer.cloud.one img{
+   bottom:0;
+   z-index:9;
+   animation-duration:120s;
+   animation-timing-function:ease-out;
+ }
+ .layer.cloud.two img{
+   bottom:120px;
+   z-index:7;
+   animation-duration:60s;
+   animation-timing-function:ease-in;
+ }
+ .layer.cloud.three img{
+   z-index:5;
+   bottom:300px;
+   animation-duration:120s;
+   animation-timing-function:ease-out;
+ }
+ @keyframes cloud {from{right:0;}to{right:2000px;}}
+}
+
+#landing {
+  .header {
+    height: 170px;
+  }
+}
+
+
+
 
 #worldmap .trending-map-feed{
   text-align: center;
@@ -212,6 +442,19 @@ button a {
 
 #login{
 
+  .links-bar {
+    margin: 0 auto;
+    float: right;
+    width: 50%;
+    padding-top: 8%;
+  }
+
+  li {
+    border: 1px solid $green;
+    clear: both;
+    padding-right: 0;
+  }
+
   .login-body {
     // background-image: image("images/city6.jpg");
     height: 800px;
@@ -230,7 +473,7 @@ button a {
     width: 100%;
     height: 100%;
   }
-  .form {
+  form {
     position: absolute;
     background-color: white, .5;
     width: 285px;
@@ -272,7 +515,7 @@ button a {
   }
   .form input:focus {
     color: #333;
-    border: 2px solid $green;
+    border: 1px solid $green;
   }
   .form button {
     cursor: pointer;
@@ -526,10 +769,12 @@ height: 850px;
 
 
     .text-bio h1 {
-      font-size: 60pt;
+      font-size: 65pt;
+      font-weight: 900;
       color: white;
         line-height: .8em;
         margin-bottom: 0;
+        font-family: $body;
     }
     .text-bio h3 {
       text-align: center;
@@ -538,6 +783,7 @@ height: 850px;
       width: 70%;
       color: $dark;
       font-weight: 300;
+      font-family: $body;
     }
 
      .post, .edit, .other {
