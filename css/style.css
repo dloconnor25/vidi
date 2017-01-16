@@ -373,7 +373,7 @@ button a {
   height: 850px;
   width: 100%;
   margin-top: 8%;
-  margin-bottom: 5%; }
+  margin-bottom: 2%; }
 #profile .myphoto {
   position: relative;
   float: left;
@@ -473,11 +473,41 @@ button a {
 #profile .fa-cog p {
   text-align: center;
   margin: 0 auto; }
+#profile input {
+  display: none;
+  visibility: hidden; }
+#profile label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  color: #666; }
+#profile label:hover {
+  color: #c9da2b; }
+#profile label::before {
+  font-family: "Questrial", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%); }
+#profile #expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  border-bottom: 1px solid #c9da2b; }
+#profile #toggle:checked ~ #expand {
+  height: 250px; }
+#profile #toggle:checked ~ label::before {
+  content: "-"; }
 #profile .rec {
   margin: auto;
   display: block;
   width: 88.5%;
-  margin-top: 5%; }
+  margin-top: 1%; }
 #profile .snip1336 {
   font-family: "Questrial", sans-serif;
   position: relative;
@@ -513,15 +543,75 @@ button a {
   width: inherit;
   object-fit: cover;
   object-position: center; }
-#profile .feedContainer {
-  clear: both;
-  margin-left: 8%;
-  margin-right: 8%;
-  margin-top: 2%;
-  border-top: 3pt solid #c9da2b;
+#profile .trip-board {
+  height: 600px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden; }
+#profile .box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 300px;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 8%; }
+#profile .box h1 {
+  margin: 0 auto;
+  z-index: 10;
+  position: absolute;
+  color: #c9da2b;
+  background: rgba(0, 0, 0, 0.6);
+  height: 238px;
+  width: 81%;
+  font-size: 50pt;
+  padding-top: 7%;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif; }
+#profile .box h3 {
+  margin: 0 auto;
+  z-index: 10;
+  position: absolute;
+  color: #c9da2b;
+  background: rgba(0, 0, 0, 0.6);
+  height: 240px;
+  width: 80%;
+  font-size: 36pt;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 7%;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif; }
+#profile .box p {
+  font-size: 16pt;
+  font-family: "Questrial", sans-serif;
+  text-transform: uppercase; }
+#profile .box:hover h1 {
+  color: white; }
+#profile .box:hover h3 {
+  color: white; }
+#profile .create-board {
+  height: 240px;
+  width: 80%; }
+#profile .create-board p {
+  padding-top: 65%; }
+#profile .pic img {
+  width: 40%; }
+#profile .pic {
+  padding-top: 0; }
+#profile .feedContainer {
+  height: 400px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 1%;
+  border-top: 1px solid #c9da2b;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll; }
 #profile .imagefeed {
   height: 150px;
   width: 20%;

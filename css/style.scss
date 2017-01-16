@@ -468,7 +468,7 @@ a {
       height: 850px;
       width: 100%;
       margin-top: 8%;
-      margin-bottom: 5%;
+      margin-bottom: 2%;
     }
   .myphoto {
       position: relative;
@@ -614,11 +614,50 @@ i {
       margin: 0 auto;
     }
 
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  color: #666;
+}
+label:hover {
+  color: $green;
+}
+label::before {
+  font-family: $body;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  border-bottom: 1px solid $green;
+}
+
+#toggle:checked ~ #expand {
+  height: 250px;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+
 .rec {
     margin: auto;
     display: block;
     width: 88.5%;
-    margin-top: 5%;
+    margin-top: 1%;
   }
 .snip1336 {
     font-family: $body;
@@ -668,15 +707,97 @@ i {
     object-position: center;
   }
 
+.trip-board {
+height: 600px;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 3%;
+display: flex;
+flex-wrap: wrap;
+overflow: hidden;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 300px;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 8%;
+}
+
+.box h1 {
+  margin: 0 auto;
+  z-index: 10;
+  position: absolute;
+  color: $green;
+  background: rgba(0,0,0,.6);
+  height: 238px;
+  width: 81%;
+  font-size: 50pt;
+  padding-top: 7%;
+  box-sizing: border-box;
+    font-family: $body;
+}
+
+.box h3 {
+  margin: 0 auto;
+  z-index: 10;
+  position: absolute;
+  color: $green;
+  background: rgba(0,0,0,.6);
+  height: 240px;
+  width: 80%;
+  font-size: 36pt;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 7%;
+  box-sizing: border-box;
+    font-family: $body;
+}
+
+.box p{
+  font-size: 16pt;
+  font-family: $body;
+  text-transform: uppercase;
+}
+
+.box:hover h1 {
+  color: white;
+}
+
+.box:hover h3 {
+  color: white;
+}
+.create-board{
+  height: 240px;
+  width: 80%;
+}
+
+.create-board p{
+  padding-top: 65%;
+}
+
+.pic img {
+  width: 40%;
+}
+
+.pic {
+  padding-top: 0;
+}
+
+
   .feedContainer {
-    clear: both;
+    height: 400px;
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 2%;
-      border-top: 3pt solid $green;
+    margin-top: 1%;
+      border-top: 1px solid $green;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .imagefeed {
