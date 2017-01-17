@@ -170,16 +170,7 @@ a:active {
 
 #worldmap {
 
-.BR-content{
-    text-align: center;
-    margin: 0;
-    font-family: $body;
-    font-size: 28px;
-  }
 
-.CN-content{
-    @extend .BR-content ;
-  }
 
 .logo {
   height: 200px;
@@ -215,11 +206,6 @@ a:active {
   position: absolute;
   left: 0; top: 0;
 }
-
-nav{
-
-}
-
 
 .imagefeed:hover .image-hover {
    display: block;
@@ -266,9 +252,6 @@ i {
 i:hover{
   color: $green;
 }
-
-
-
 
 #chartdiv {
   width: 100%;

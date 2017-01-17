@@ -47,16 +47,18 @@ var map = AmCharts.makeChart( "chartdiv", {
 
 $(document).ready(function(){
   //Displays & hides content based on user's country focus.
-  $('.amcharts-map-area-CN').click(function(){
-    $('div.china').show();
-    $('div.brazil').hide();
-  });
 
   $('.amcharts-map-area-BR').click(function(){
   $('div.brazil').show();
   $('div.china').hide();
 
   });
+
+  $('.amcharts-map-area-CN').click(function(){
+    $('div.china').show();
+    $('div.brazil').hide();
+  });
+
   //Hides the documentation link & download links.
   $('#chartdiv').click(function(){
   $('.amcharts-export-menu, div.amcharts-chart-div a').hide(function(){
