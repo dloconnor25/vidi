@@ -17,8 +17,6 @@ p {
  font-family: $body;
 }
 
-
-
 .imagefeed p {
  font-size: 14pt;
  padding-left: 1%;
@@ -98,11 +96,14 @@ a:link {
 
 a:hover {
  color: $green;
+ // background-color: $dark;
+
 }
 
 a:active {
  color: $green;
 }
+
 button a {
  font-size: 12pt;
 }
@@ -189,6 +190,15 @@ button a {
   //   @extend .BR-content;
   // }
 
+.logo {
+  height: 200px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  }
+
 .imagefeed {
    height: 290px;
    width: 100%;
@@ -250,6 +260,22 @@ i {
   position: relative;
   font-size: 2em;
 }
+
+i:hover{
+  color: $green;
+}
+
+a:hover {
+ color: $green;
+ // background-color: $dark;
+ border: 1px solid $green;
+}
+
+a:active {
+ color: $green;
+ border: 1px solid green;
+}
+
 
 #chartdiv {
   width: 100%;
