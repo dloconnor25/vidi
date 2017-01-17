@@ -191,111 +191,6 @@ button a {
   margin-bottom: 0;
 }
 
-#follow {
-
-.followers {
-  margin-top: 2%;
-  border-top: 1px solid $green;
-}
-input {
-  display: none;
-  visibility: hidden;
-}
-label {
-  display: block;
-  padding: 0.5em;
-  text-align: center;
-  color: #666;
-}
-label:hover {
-  color: $green;
-}
-label::before {
-  font-family: $body;
-  font-weight: bold;
-  font-size: 15px;
-  content: "+";
-  vertical-align: text-top;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
-  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
-}
-#expand {
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.5s;
-  border-bottom: 1px solid $green;
-}
-
-#toggle:checked ~ #expand {
-  height: 250px;
-}
-#toggle:checked ~ label::before {
-  content: "-";
-}
-
-.rec {
-    margin: auto;
-    display: block;
-    width: 88.5%;
-    margin-top: 1%;
-  }
-.snip1336 {
-    font-family: $body;
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin-top: 5%;
-    margin: 10px 1%;
-    max-width: 200px;
-    width: 100%;
-    color: $dark;
-    text-align: left;
-    background-color: white;
-  }
-
-  .snip1336 h2 {
-    clear: both;
-    font-size: 24pt;
-      line-height: .8em;
-  }
-
-  .snip1336 h3 {
-    font-size: 14pt;
-      line-height: .8em;
-      margin: 0 auto;
-  }
-  .snip1336 .follow {
-    background: $green;
-    color: $dark;
-  }
-
-  .snip1336 .follow:hover {
-    background: $teal;
-    color: $green;
-  }
-  .snip1336 figcaption {
-      width: 100%;
-      position: relative;
-      padding: 0;
-  }
-
-
-  figure img{
-    height: 100px;
-    width: inherit;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .footer {
-    height: 50px;
-    width: 100%;
-  }
-}
-
 // content is the animation within the landing page
   #content{
     .content{
@@ -666,9 +561,14 @@ a:link{
     padding-right: 0;
   }
 
+  .bg-image {
+    background-image: url(images/city6.jpg);
+  }
+
   .login-body {
     // background-image: image("images/city6.jpg");
-    height: 800px;
+    height: auto;
+    width: 40%;
     background: white, .25;
     font-family: $body;
       text-transform: uppercase;
@@ -697,7 +597,7 @@ a:link{
   .form h2 {
     margin: 0 0 30px;
     line-height: 1.5;
-    color: $teal;
+    color: $purp;
     font-size: 40px;
     font-weight: 600;
   }
@@ -730,12 +630,12 @@ a:link{
   }
   .form button {
     cursor: pointer;
-    background: $green;
+    background: white;
     width: 40%;
     padding: 10px 15px;
     margin-left: 30%;
     border: 0;
-    color: $dark;
+    color: $green;
     font-family: $body;
     font-size: 18pt;
     text-transform: uppercase;
@@ -745,16 +645,17 @@ a:link{
   a {
     font-size: 18pt;
   }
+  a:hover{
+    border: 1px solid $purp;
+  }
   .form button:hover {
-    background: $teal;
+    color: $purp;
   }
 
-}
-
-#sign-up {
   .sign-up-body {
     // background-image: image("images/city6.jpg");
-    height: 800px;
+    height: auto;
+    width: 40%;
     background: white, .25;
     font-family: $body;
       text-transform: uppercase;
@@ -772,10 +673,10 @@ a:link{
   }
   .form {
     position: absolute;
-    background-color: white, .5;
+    background-color: red, .5;
     width: 285px;
     margin-top: 5%;
-    margin-left: 35%;
+
     padding: 40px;
     height: 300px;
     width: 400px;
@@ -835,6 +736,113 @@ a:link{
     background: $teal;
   }
 }
+
+#follow {
+  .followers {
+    margin-top: 8%;
+    border-top: 1px solid $green;
+    height: 400px;
+    overflow: hidden;
+  }
+  input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  color: #666;
+}
+label:hover {
+  color: $green;
+}
+label::before {
+  font-family: $body;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  border-bottom: 1px solid $green;
+}
+
+#toggle:checked ~ #expand {
+  height: 250px;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+
+.rec {
+    margin: auto;
+    display: block;
+    width: 88.5%;
+    margin-top: 1%;
+  }
+.snip1336 {
+    font-family: $body;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-top: 5%;
+    margin: 10px 1%;
+  width: 230px;
+    height: 200px;
+    width: 100%;
+    color: $dark;
+    text-align: left;
+    background-color: white;
+  }
+
+  .snip1336 h2 {
+    clear: both;
+    font-size: 24pt;
+      line-height: .8em;
+  }
+
+  .snip1336 h3 {
+    font-size: 14pt;
+      line-height: .8em;
+      margin: 0 auto;
+  }
+  .snip1336 .follow {
+    background: $green;
+    color: $dark;
+  }
+
+  .snip1336 .follow:hover {
+    background: $teal;
+    color: $green;
+  }
+  .snip1336 figcaption {
+      width: 100%;
+      position: relative;
+      padding: 0;
+  }
+
+
+  figure img{
+    height: 100px;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+    }
+
+    a h1 h2 h3 h4 p {
+      font-family: $body;
+    }
+  }
+
 
 #topics {
 .user-setup {
@@ -914,10 +922,6 @@ a {
 }}
 
 #profile {
-
-  a h1 h2 h3 h4 p {
-    font-family: $body;
-  }
   .user {
       height: 850px;
       width: 100%;
@@ -962,7 +966,7 @@ a {
     background-color: white;
   }
 
-.fig img {
+  .fig img {
   border-radius: 50%;
   width: 400px;
   height: 400px;
@@ -970,13 +974,13 @@ a {
   left: 35%;
   z-index: 1;
   padding: 10px;
-}
+  }
 
-.text-bio{
+  .text-bio{
   margin: 0 auto;
-height: 850px;
+  height: 850px;
   background: $green;
-}
+  }
 
 
     .text-bio h1 {
@@ -1017,10 +1021,10 @@ height: 850px;
         opacity: 0.85;
     }
 
-i {
+  i {
   display: inline-block;
   float: left;
-}
+  }
     .fa-camera {
       clear: both;
       margin-left: 38%;
@@ -1071,7 +1075,13 @@ i {
       margin: 0 auto;
     }
 
-input {
+  .followers {
+    margin-top: 1%;
+    border-top: 1px solid $green;
+    height: 300px;
+    overflow: hidden;
+  }
+  input {
   display: none;
   visibility: hidden;
 }
@@ -1123,7 +1133,8 @@ label::before {
     overflow: hidden;
     margin-top: 5%;
     margin: 10px 1%;
-    max-width: 200px;
+  width: 230px;
+    height: 200px;
     width: 100%;
     color: $dark;
     text-align: left;
@@ -1162,6 +1173,10 @@ label::before {
     width: inherit;
     object-fit: cover;
     object-position: center;
+    }
+
+  a h1 h2 h3 h4 p {
+    font-family: $body;
   }
 
 .trip-board {
@@ -1216,9 +1231,22 @@ overflow: hidden;
 }
 
 .box p{
+  height: 40px;
   font-size: 16pt;
   font-family: $body;
   text-transform: uppercase;
+  margin-top: 2%;
+}
+
+.fa-plus {
+  color: white;
+  z-index: 1000;
+  padding-top: 20%;
+  margin-left: 33%;
+}
+
+.fa-plus:hover{
+  color: $green;
 }
 
 .box:hover h1 {
@@ -1234,7 +1262,7 @@ overflow: hidden;
 }
 
 .create-board p{
-  padding-top: 65%;
+  padding-top: 18%;
 }
 
 .pic img {
@@ -1245,13 +1273,34 @@ overflow: hidden;
   padding-top: 0;
 }
 
+.fa-pencil{
+  z-index: 1000;
+  color: $dark;
+  float: right;
+  padding-right: 20%;
+}
+
+.fa-pencil:hover{
+  color: $green;
+}
+
+.feed-title {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid $green;
+}
+
+.feed-title p {
+  font-size: 21pt;
+  font-family: $body;
+  text-align: center;
+}
 
   .feedContainer {
     height: 400px;
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 1%;
-      border-top: 1px solid $green;
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;

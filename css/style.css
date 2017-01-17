@@ -152,83 +152,6 @@ button a {
 .imagefeed:hover h2 {
   margin-bottom: 0; }
 
-#follow .followers {
-  margin-top: 2%;
-  border-top: 1px solid #c9da2b; }
-#follow input {
-  display: none;
-  visibility: hidden; }
-#follow label {
-  display: block;
-  padding: 0.5em;
-  text-align: center;
-  color: #666; }
-#follow label:hover {
-  color: #c9da2b; }
-#follow label::before {
-  font-family: "Questrial", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  content: "+";
-  vertical-align: text-top;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
-  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%); }
-#follow #expand {
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.5s;
-  border-bottom: 1px solid #c9da2b; }
-#follow #toggle:checked ~ #expand {
-  height: 250px; }
-#follow #toggle:checked ~ label::before {
-  content: "-"; }
-#follow .rec {
-  margin: auto;
-  display: block;
-  width: 88.5%;
-  margin-top: 1%; }
-#follow .snip1336 {
-  font-family: "Questrial", sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin-top: 5%;
-  margin: 10px 1%;
-  max-width: 200px;
-  width: 100%;
-  color: #383e1b;
-  text-align: left;
-  background-color: white; }
-#follow .snip1336 h2 {
-  clear: both;
-  font-size: 24pt;
-  line-height: .8em; }
-#follow .snip1336 h3 {
-  font-size: 14pt;
-  line-height: .8em;
-  margin: 0 auto; }
-#follow .snip1336 .follow {
-  background: #c9da2b;
-  color: #383e1b; }
-#follow .snip1336 .follow:hover {
-  background: #2e966f;
-  color: #c9da2b; }
-#follow .snip1336 figcaption {
-  width: 100%;
-  position: relative;
-  padding: 0; }
-#follow figure img {
-  height: 100px;
-  width: inherit;
-  object-fit: cover;
-  object-position: center; }
-#follow .footer {
-  height: 50px;
-  width: 100%; }
-
 #content {
   /*Mountains*/
   /*Cloud*/ }
@@ -487,8 +410,11 @@ button a {
   border: 1px solid #c9da2b;
   clear: both;
   padding-right: 0; }
+#login .bg-image {
+  background-image: url(images/city6.jpg); }
 #login .login-body {
-  height: 800px;
+  height: auto;
+  width: 40%;
   background: white, .25;
   font-family: "Questrial", sans-serif;
   text-transform: uppercase;
@@ -508,6 +434,80 @@ button a {
   width: 285px;
   margin-top: 5%;
   margin-left: 35%;
+  padding: 40px;
+  height: 300px;
+  width: 400px; }
+#login .form h2 {
+  margin: 0 0 30px;
+  line-height: 1.5;
+  color: #4A093B;
+  font-size: 40px;
+  font-weight: 600; }
+#login .form input {
+  outline: none;
+  display: block;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 5%;
+  padding: 10px 15px;
+  border: 2px solid #c9da2b;
+  color: #ccc;
+  font-family: "Questrial", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-wieght: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear; }
+#login .form input:focus {
+  color: #333;
+  border: 1px solid #c9da2b; }
+#login .form button {
+  cursor: pointer;
+  background: white;
+  width: 40%;
+  padding: 10px 15px;
+  margin-left: 30%;
+  border: 0;
+  color: #c9da2b;
+  font-family: "Questrial", sans-serif;
+  font-size: 18pt;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 5%; }
+#login a {
+  font-size: 18pt; }
+#login a:hover {
+  border: 1px solid #4A093B; }
+#login .form button:hover {
+  color: #4A093B; }
+#login .sign-up-body {
+  height: auto;
+  width: 40%;
+  background: white, .25;
+  font-family: "Questrial", sans-serif;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+#login .sign-up-body::before {
+  z-index: -1;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+#login .form {
+  position: absolute;
+  background-color: red, .5;
+  width: 285px;
+  margin-top: 5%;
   padding: 40px;
   height: 300px;
   width: 400px; }
@@ -541,7 +541,7 @@ button a {
   transition: 0.2s linear; }
 #login .form input:focus {
   color: #333;
-  border: 1px solid #c9da2b; }
+  border: 2px solid #c9da2b; }
 #login .form button {
   cursor: pointer;
   background: #c9da2b;
@@ -560,78 +560,84 @@ button a {
 #login .form button:hover {
   background: #2e966f; }
 
-#sign-up .sign-up-body {
-  height: 800px;
-  background: white, .25;
-  font-family: "Questrial", sans-serif;
-  text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-#sign-up .sign-up-body::before {
-  z-index: -1;
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-#sign-up .form {
-  position: absolute;
-  background-color: white, .5;
-  width: 285px;
-  margin-top: 5%;
-  margin-left: 35%;
-  padding: 40px;
-  height: 300px;
-  width: 400px; }
-#sign-up .form h2 {
-  margin: 0 0 30px;
-  line-height: 1.5;
-  color: #2e966f;
-  font-size: 40px;
-  font-weight: 600; }
-#sign-up .form input {
-  outline: none;
+#follow .followers {
+  margin-top: 8%;
+  border-top: 1px solid #c9da2b;
+  height: 400px;
+  overflow: hidden; }
+#follow input {
+  display: none;
+  visibility: hidden; }
+#follow label {
   display: block;
-  width: 70%;
-  margin-left: 15%;
+  padding: 0.5em;
+  text-align: center;
+  color: #666; }
+#follow label:hover {
+  color: #c9da2b; }
+#follow label::before {
+  font-family: "Questrial", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%); }
+#follow #expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  border-bottom: 1px solid #c9da2b; }
+#follow #toggle:checked ~ #expand {
+  height: 250px; }
+#follow #toggle:checked ~ label::before {
+  content: "-"; }
+#follow .rec {
+  margin: auto;
+  display: block;
+  width: 88.5%;
+  margin-top: 1%; }
+#follow .snip1336 {
+  font-family: "Questrial", sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
   margin-top: 5%;
-  padding: 10px 15px;
-  border: 2px solid #c9da2b;
-  color: #ccc;
-  font-family: "Questrial", sans-serif;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 14px;
-  font-wieght: 600;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: 0.2s linear;
-  -moz-transition: 0.2s linear;
-  -ms-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  transition: 0.2s linear; }
-#sign-up .form input:focus {
-  color: #333;
-  border: 2px solid #c9da2b; }
-#sign-up .form button {
-  cursor: pointer;
-  background: #c9da2b;
-  width: 40%;
-  padding: 10px 15px;
-  margin-left: 30%;
-  border: 0;
+  margin: 10px 1%;
+  width: 230px;
+  height: 200px;
+  width: 100%;
   color: #383e1b;
-  font-family: "Questrial", sans-serif;
-  font-size: 18pt;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 5%; }
-#sign-up a {
-  font-size: 18pt; }
-#sign-up .form button:hover {
-  background: #2e966f; }
+  text-align: left;
+  background-color: white; }
+#follow .snip1336 h2 {
+  clear: both;
+  font-size: 24pt;
+  line-height: .8em; }
+#follow .snip1336 h3 {
+  font-size: 14pt;
+  line-height: .8em;
+  margin: 0 auto; }
+#follow .snip1336 .follow {
+  background: #c9da2b;
+  color: #383e1b; }
+#follow .snip1336 .follow:hover {
+  background: #2e966f;
+  color: #c9da2b; }
+#follow .snip1336 figcaption {
+  width: 100%;
+  position: relative;
+  padding: 0; }
+#follow figure img {
+  height: 100px;
+  width: inherit;
+  object-fit: cover;
+  object-position: center; }
+#follow a h1 h2 h3 h4 p {
+  font-family: "Questrial", sans-serif; }
 
 #topics .user-setup {
   height: 60px;
@@ -689,8 +695,6 @@ button a {
 #topics .form {
   margin-bottom: 5%; }
 
-#profile a h1 h2 h3 h4 p {
-  font-family: "Questrial", sans-serif; }
 #profile .user {
   height: 850px;
   width: 100%;
@@ -798,6 +802,11 @@ button a {
 #profile .fa-cog p {
   text-align: center;
   margin: 0 auto; }
+#profile .followers {
+  margin-top: 1%;
+  border-top: 1px solid #c9da2b;
+  height: 300px;
+  overflow: hidden; }
 #profile input {
   display: none;
   visibility: hidden; }
@@ -840,7 +849,8 @@ button a {
   overflow: hidden;
   margin-top: 5%;
   margin: 10px 1%;
-  max-width: 200px;
+  width: 230px;
+  height: 200px;
   width: 100%;
   color: #383e1b;
   text-align: left;
@@ -868,6 +878,8 @@ button a {
   width: inherit;
   object-fit: cover;
   object-position: center; }
+#profile a h1 h2 h3 h4 p {
+  font-family: "Questrial", sans-serif; }
 #profile .trip-board {
   height: 600px;
   width: 80%;
@@ -912,9 +924,18 @@ button a {
   box-sizing: border-box;
   font-family: "Questrial", sans-serif; }
 #profile .box p {
+  height: 40px;
   font-size: 16pt;
   font-family: "Questrial", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 2%; }
+#profile .fa-plus {
+  color: white;
+  z-index: 1000;
+  padding-top: 20%;
+  margin-left: 33%; }
+#profile .fa-plus:hover {
+  color: #c9da2b; }
 #profile .box:hover h1 {
   color: white; }
 #profile .box:hover h3 {
@@ -923,17 +944,31 @@ button a {
   height: 240px;
   width: 80%; }
 #profile .create-board p {
-  padding-top: 65%; }
+  padding-top: 18%; }
 #profile .pic img {
   width: 40%; }
 #profile .pic {
   padding-top: 0; }
+#profile .fa-pencil {
+  z-index: 1000;
+  color: #383e1b;
+  float: right;
+  padding-right: 20%; }
+#profile .fa-pencil:hover {
+  color: #c9da2b; }
+#profile .feed-title {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #c9da2b; }
+#profile .feed-title p {
+  font-size: 21pt;
+  font-family: "Questrial", sans-serif;
+  text-align: center; }
 #profile .feedContainer {
   height: 400px;
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 1%;
-  border-top: 1px solid #c9da2b;
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll; }

@@ -1,1 +1,4 @@
 
+<script>
+$("select").imagepicker()
+</script>
