@@ -104,10 +104,6 @@ a:active {
  color: $green;
 }
 
-button a {
- font-size: 12pt;
-}
-
 .titlerow {
  height: 60px;
  width: 100%;
@@ -174,21 +170,16 @@ button a {
 
 #worldmap {
 
-// .BR-content{
-//     text-align: center;
-//     margin: 0;
-//     font-family: $body;
-//     background-color: $green;
-//     font-size: 21px;
-//   }
+.BR-content{
+    text-align: center;
+    margin: 0;
+    font-family: $body;
+    font-size: 28px;
+  }
 
-// .CN-content{
-//     @extend .BR-content ;
-//   }
-
-  // .trending-content{
-  //   @extend .BR-content;
-  // }
+.CN-content{
+    @extend .BR-content ;
+  }
 
 .logo {
   height: 200px;
@@ -202,6 +193,7 @@ button a {
 .imagefeed {
    height: 290px;
    width: 100%;
+   position: relative;
 }
 
 .imagefeed img {
@@ -219,6 +211,16 @@ button a {
    overflow: hidden;
 }
 
+.imagefeed-icon {
+  position: absolute;
+  left: 0; top: 0;
+}
+
+nav{
+
+}
+
+
 .imagefeed:hover .image-hover {
    display: block;
    background: rgba(0, 0, 0, .7);
@@ -227,14 +229,14 @@ button a {
 }
 
 .imagefeed:hover p {
-   margin-left: 5%;
-   margin-right: 5%;
-// margin-bottom: 8%;
-  overflow: hidden;
+   margin-left: 8%;
+   margin-right: 8%;
+
 }
 
 .imagefeed:hover h2 {
-  margin-bottom: 0;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .map-container {
@@ -265,16 +267,7 @@ i:hover{
   color: $green;
 }
 
-a:hover {
- color: $green;
- // background-color: $dark;
- border: 1px solid $green;
-}
 
-a:active {
- color: $green;
- border: 1px solid green;
-}
 
 
 #chartdiv {

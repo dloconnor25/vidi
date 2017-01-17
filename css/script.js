@@ -50,7 +50,6 @@ $(document).ready(function(){
   $('.amcharts-map-area-CN').click(function(){
     $('div.china').show();
     $('div.brazil').hide();
-    $('div.china').slideDown('slow');
   });
 
   $('.amcharts-map-area-BR').click(function(){
