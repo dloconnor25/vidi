@@ -310,6 +310,12 @@ button a {
 #landing .create {
   background-color: #4A093B; }
 
+#login a {
+  font-family: "Questrial", sans-serif;
+  font-size: 21pt;
+  text-transform: uppercase; }
+#login a:hover {
+  color: white; }
 #login input[type="radio"] {
   position: fixed;
   left: -100px; }
@@ -339,24 +345,21 @@ button a {
   margin-bottom: 10%;
   opacity: 1; }
 #login button {
-  width: 250px;
+  width: 220px;
   height: 40px;
-  border-radius: 5px;
   background-color: #c9da2b;
-  font-size: 0; }
+  font-size: 0;
+  border-style: none; }
   #login button:before {
     font-size: 21pt;
     font-family: "Questrial", sans-serif;
-    text-transform: uppercase; }
-#login [id="sign-in"]:checked ~ button:before {
-  content: 'Sign In'; }
-#login [id="sign-up"]:checked ~ button:before {
-  content: 'Sign Up'; }
-#login [id="reset"]:checked ~ button:before {
-  content: 'Reset password'; }
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 5%; }
 #login label {
   font-family: "Questrial", sans-serif;
   font-size: 21pt;
+  margin-bottom: 3%;
   text-transform: uppercase;
   position: relative;
   display: inline-block;
@@ -389,19 +392,22 @@ button a {
   height: 600px;
   text-align: center;
   position: absolute;
-  top: 20%;
-  left: 40%; }
+  top: 30%;
+  left: 35%; }
+#login .sign-up.sign-in.reset {
+  margin-top: 5%; }
 #login fieldset {
   height: 600px;
   width: 450px;
-  background-color: rgba(225, 225, 225, 0.75); }
+  background-color: rgba(225, 225, 225, 0.75);
+  border: 5px solid #c9da2b; }
 #login form {
-  height: 500px;
+  height: 550px;
   width: 90%;
   margin: 0 auto;
   padding: 10% 5%; }
 #login .contain {
-  height: 700px;
+  height: 600px;
   width: 100%;
   background-position: bottom;
   object-fit: scale-down;
