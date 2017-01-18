@@ -431,6 +431,9 @@ input:not([type="radio"]) {
     margin-bottom: 10%;
     opacity: 1;
 }
+// [id="sign-in"]:checked ~ button:before { content: 'Sign In'; }
+// [id="sign-up"]:checked ~ .sig:before { content: 'Sign Up'; }
+// [id="reset"]:checked ~ button:before { content: 'Reset password'; }
 
 
 //    submit button
