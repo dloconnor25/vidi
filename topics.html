@@ -5,13 +5,11 @@
     <title>topic preference</title>
   <link href="https://necolas.github.io/normalize.css/5.0.0/normalize.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-
+      <link rel="stylesheet" href="css/userID.css">
       <link rel="stylesheet" href="css/image-picker.css">
       <link rel="stylesheet" href="css/style.css">
+      <script src="https://use.fontawesome.com/91125e5e17.js"></script>
 
-      <link rel="stylesheet" href="https://use.fontawesome.com/91125e5e17.js">
-    <script src="css/image-picker.js"></script>
-  <link rel="stylesheet" href="css/userID.css">
   </head>
   <body>
 
@@ -21,18 +19,25 @@
       <nav class="hamburger-menu">
 
         <ul class="links-bar">
-      <li><a href="feed.html#">FEED.</a></li>
+      <li><a href="feed.html">FEED.</a></li>
       <li><a href="worldmap.html">DISCOVER.</a></li>
       <li><a href="profile.html">PROFILE.</a></li>
     </ul>
        </nav>
     </div>
 
+<div id="topics">
+  <div class="feed-title">
+    <h2>Find new followers and select your interests</h2>
+  </div>
+</div>
+
+
 
 <div id="follow">
     <div class="followers">
           <input id="toggle" type="checkbox" checked>
-          <label for="toggle">RECOMMEDED FLOWERS</label>
+          <label for="toggle"></label>
           <div id="expand">
             <section>
               <figure class="rec">
@@ -101,50 +106,53 @@
 
 <div id="topics">
     <div class="user-setup">
-      <p>Choose the activities and places you prefer to see on your feed...</p>
+      <p>ACTIVITIES</p>
     </div>
 
+<div class="scrolling-bar">
 <select class="image-picker show-html" multiple="multiple">
 
-  <option data-img-src="images/blacktemple.png" value="13"></option>
-  <option data-img-src="images/brycecanyon.png" value="14"></option>
-  <option data-img-src="images/church.png" value="15"></option>
-  <option data-img-src="images/cityview.png" value="16"></option>
+  <option data-img-src="images/blacktemple.png" value="13"><p>Adrenaline</p></option>
+  <option data-img-src="images/brycecanyon.png" value="14"><<p>Adrenaline</p></option>
+  <option data-img-src="images/church.png" value="15"><p>Adrenaline</p></option>
+  <option data-img-src="images/cityview.png" value="16"><p>Adrenaline</p></option>
 
 
 
-  <option data-img-src="images/girlspool.png" value="17"></option>
-  <option data-img-src="images/graffiti.png" value="18"></option>
-  <option data-img-src="images/desert.png" value="19"></option>
-  <option data-img-src="images/waterhut.png" value="20"></option>
+  <option data-img-src="images/girlspool.png" value="17"><p>Adrenaline</p></option>
+  <option data-img-src="images/graffiti.png" value="18"><p>Adrenaline</p></option>
+  <option data-img-src="images/desert.png" value="19"><p>Adrenaline</p></option>
+  <option data-img-src="images/waterhut.png" value="20"><p>Adrenaline</p></option>
 
-  <option data-img-src="images/city6.jpg" value="1"></option>
-  <option data-img-src="images/mntcabin.png" value="2"></option>
-  <option data-img-src="images/redrocks.png" value="3"></option>
-  <option data-img-src="images/ridgelinehike.png" value="4"></option>
+  <option data-img-src="images/city6.jpg" value="1"><p>Adrenaline</p></option>
+  <option data-img-src="images/mntcabin.png" value="2"><p>Adrenaline</p></option>
+  <option data-img-src="images/redrocks.png" value="3"><p>Adrenaline</p></option>
+  <option data-img-src="images/ridgelinehike.png" value="4"><p>Adrenaline</p></option>
 
-  <option data-img-src="images/pizza.png" value="5"></option>
-  <option data-img-src="images/waterfall.png" value="6"></option>
-  <option data-img-src="images/windingstairs.png" value="7"></option>
-  <option data-img-src="images/lifeguardstand.png" value="8"></option>
+  <option data-img-src="images/pizza.png" value="5"><p>Adrenaline</p></option>
+  <option data-img-src="images/waterfall.png" value="6"><p>Adrenaline</p></option>
+  <option data-img-src="images/windingstairs.png" value="7"><p>Adrenaline</p></option>
+  <option data-img-src="images/lifeguardstand.png" value="8"><p>Adrenaline</p></option>
 
-  <option data-img-src="images/hotspring.png" value="9"></option>
-  <option data-img-src="images/coastline.png" value="10"></option>
-  <option data-img-src="images/cactus.png" value="11"></option>
-  <option data-img-src="images/bookstore.png" value="12"></option>
+  <option data-img-src="images/hotspring.png" value="9"><p>Adrenaline</p></option>
+  <option data-img-src="images/coastline.png" value="10"><p>Adrenaline</p></option>
+  <option data-img-src="images/cactus.png" value="11"><p>Adrenaline</p></option>
+  <option data-img-src="images/bookstore.png" value="12"><p>Adrenaline</p></option>
 </select>
-
-<script>
-$("select").imagepicker()
-</script>
+</div>
 
 <div class="form">
 <button><a href="feed.html">Continue</a></button>
 </div>
 
+<script src="css/image-picker.js"></script>
+
+<script>
+$("select").imagepicker()
+</script>
+
+
 </div>
 
-
-    <script src="css/topic.js"></script>
   </body>
 </html>

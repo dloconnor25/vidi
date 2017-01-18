@@ -1,23 +1,3 @@
-$(document).ready(function(){
-  //Displays & hides content based on user's country focus.
-  $('.amcharts-map-area-CN').click(function(){
-  $('div.china').slideToggle(function(){
-  });
-  });
-
-  $('.amcharts-map-area-BR').click(function(){
-  $('div.brazil').slideToggle(function(){
-
-  });
-  });
-  //Hides the documentation link & download links.
-  $('#chartdiv').click(function(){
-  $('.amcharts-export-menu, div.amcharts-chart-div a').hide(function(){
-
-  });
-  });
-});
-
 var map = AmCharts.makeChart( "chartdiv", {
 
   "type": "map",
@@ -63,3 +43,49 @@ var map = AmCharts.makeChart( "chartdiv", {
 //   // $.ajax({url:url, dataType:"jsonp"}).done(function (results) { console.log(results) } );
 // }
 // map.addListener("click", i_got_clicked);
+
+
+$(document).ready(function(){
+  //Displays & hides content based on user's country focus.
+
+  $('.amcharts-map-area-BR').click(function(){
+  $('div.brazil').show();
+  $('div.china').hide();
+  $('div.france').hide();
+  $('div.new-zealand').hide();
+
+  });
+
+  $('.amcharts-map-area-CN').click(function(){
+    $('div.china').show();
+    $('div.brazil').hide();
+    $('div.france').hide();
+    $('div.new-zealand').hide();
+
+  });
+
+  $('.amcharts-map-area-FR').click(function(){
+    $('div.france').show();
+    $('div.brazil').hide();
+    $('div.china').hide();
+    $('div.new-zealand').hide();
+
+  });
+
+  // $('.amcharts-map-area-NZ').click(function(){
+  //   $('div.new-zealand').show();
+  //   $('div.brazil').hide();
+  //   $('div.china').hide();
+  //   $('div.france').hide();
+  //
+  // });
+
+
+
+  //Hides the documentation link & download links.
+  $('#chartdiv').click(function(){
+  $('.amcharts-export-menu, div.amcharts-chart-div a').hide(function(){
+
+  });
+  });
+});
